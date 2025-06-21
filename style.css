@@ -1,0 +1,243 @@
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            
+        
+        
+            .top-section{
+                width: auto;
+                color: aliceblue;
+                background-color: rgb(11, 53, 87);
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: 1rem;
+                font-size: 0.9rem;
+
+                .tps-l,
+                .tps-r{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 1rem;
+                    align-items: center;
+
+
+                }
+               
+
+
+
+            }
+
+            nav{
+                padding: 1.5rem 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .nav-l{
+                    img{
+                        width:50px;
+                        height:50px;
+                        margin-right: 500px;
+                    }
+                }
+
+                .nav-r{
+                    ul{
+                        color: #000;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        gap: 1.5rem;
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        font-size: 0.95rem;
+
+                    
+                    }
+                }
+            }
+
+            header{
+                background-image:url('./images/bg.jpg') ;
+                background-repeat: no-repeat; 
+                background-size: cover;
+                box-sizing: border-box;
+                height: 700px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                color: aliceblue;
+                align-items: center;
+                padding: 3rem;
+                
+
+                .h-l{
+                    h1{
+                        font-size: 4rem;
+                        margin-bottom: 2rem;
+                        animation:  fadeInDown 1s ease-out ;
+                    }
+                    #hbtn{
+                        border-radius: 5rem;
+                        height: 30px;
+                        width: 150px;
+                        background-color: rgb(78, 178, 181);
+                        color: aliceblue;
+                        text-shadow: white;
+                        box-shadow: white;
+                        border: white;
+
+                        &:hover{
+                            background-color: darkslategrey;
+                        }
+
+                    }
+                    p{
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                .h-r{
+                    form{
+                        background-color: aliceblue;
+                        color: #000;
+                        padding:2rem;
+                        border-radius: 10px;
+                        font-size: 1rem;
+                        position: relative;
+                        max-width: 30rem;
+
+                        h3{
+                            font-size: 1.3rem;
+                            color:rgb(23, 29, 65);
+                        }
+
+                        .inp{
+                            border-radius: 1rem;
+                            padding: 0.8rem;
+                            width: 88%;
+                            border: 1px solid rgb(93, 93, 93);
+                            margin-bottom: 1.5rem;
+
+                           
+
+                        }
+
+                        a{
+                            
+                            color:deepskyblue;
+                        }
+                         #fbtn{
+                            background-color: rgb(14, 37, 64);
+                            color: aliceblue;
+                            border: none;
+                            border-radius: 2rem;
+                            width: 90px;
+                            height: 30px;
+                            margin-bottom: 30px;
+                            position: absolute;
+                            bottom: -42px;
+                            cursor: pointer;
+                            transition: background 0.3s ease;
+
+
+                            &:hover{
+                                background-color: black;
+                            }
+                            
+                                                
+                            
+                        }
+                      
+                    }
+                     
+                }
+            }
+            section{
+                  .container{
+                  padding:4rem 2rem;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  gap: 2rem;
+
+
+                  div{
+                    
+                   
+                    p{
+                        font-size: 1.4rem;
+                        line-height: 1.5;
+                    }
+                    img{
+                        width: 6rem;
+                        height: 6rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    h5{
+                        color:  rgb(27, 61, 101);
+                        font-size: large;
+                    }
+                  }
+                }
+                 
+                  }
+                  
+                  
+                
+                
+            }
+
+            @keyframes fadeInDown {
+                from{
+                    opacity:0;
+                    transform: translateY(-2rem);
+                }
+                to{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                
+            }
+
+            @media (max-width:768px) {
+
+                .top-section{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    height: 400px;
+
+                    p{
+                        margin:0.2rem 0;
+                    }
+
+                    .tps-l,
+                .tps-r{
+                    flex-direction: column;
+                }
+                }
+                header{
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+
+                .nav-r ul{
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                
+            }
+        
+
+
+
+
+    
